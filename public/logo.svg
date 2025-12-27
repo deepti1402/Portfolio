@@ -10,7 +10,7 @@
   <circle cx="100" cy="100" r="90" stroke="url(#grad1)" stroke-width="12" fill="none" />
   
   <!-- Monogram text -->
-  <text x="100" y="110" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="100" fill="#1e1b4b">DS</text>
+  <text x="100" y="110" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="100" fill="url(#grad1)">DS</text>
   
   <!-- Heartbeat Pulse Line Overlay -->
   <path d="M15 100 H60 L85 40 L115 160 L140 80 L160 100 H185" stroke="#f43f5e" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
