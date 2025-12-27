@@ -7,11 +7,11 @@
   </defs>
   
   <!-- Outer Circle -->
-  <circle cx="100" cy="100" r="90" stroke="url(#grad1)" stroke-width="12" fill="none" />
+  <circle cx="100" cy="100" r="90" stroke="url(#grad1)" stroke-width="8" fill="none" />
   
-  <!-- Monogram text -->
-  <text x="100" y="110" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="100" fill="url(#grad1)">DS</text>
+  <!-- Monogram text - Serif font for style -->
+  <text x="100" y="105" dominant-baseline="middle" text-anchor="middle" font-family="'Times New Roman', serif" font-weight="bold" font-size="100" fill="url(#grad1)">DS</text>
   
-  <!-- Heartbeat Pulse Line Overlay -->
-  <path d="M15 100 H60 L85 40 L115 160 L140 80 L160 100 H185" stroke="#f43f5e" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <!-- Heartbeat Pulse Line Underline - Non-overlapping -->
+  <path d="M40 145 H80 L95 125 L115 165 L130 145 H160" stroke="#f43f5e" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

@@ -20,7 +20,7 @@ export default function Hero() {
                         Biomedical Engineer • 3 Years Experience
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight text-slate-900 dark:text-white">
+                    <h1 className="text-5xl md:text-7xl font-bold font-serif text-slate-900 dark:text-white mb-6 leading-tight">
                         Ensuring <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-accent-500">Patient Safety</span><br />
                         through Reliable Operations
                     </h1>
