@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X, Stethoscope, Download } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { ThemeToggle } from './ui/theme-toggle';
 
 const navItems = [
@@ -27,16 +27,14 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white/90 dark:bg-slate-950/90 backdrop-blur-md shadow-lg py-3 border-b border-slate-200/50 dark:border-slate-800/50'
-                    : 'bg-transparent py-5'
+                ? 'bg-white/90 dark:bg-slate-950/90 backdrop-blur-md shadow-lg py-3 border-b border-slate-200/50 dark:border-slate-800/50'
+                : 'bg-transparent py-5'
                 }`}
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
-                    <div className="flex items-center gap-2 group cursor-pointer">
-                        <div className="p-2 bg-brand-500/10 rounded-lg group-hover:scale-110 transition-transform">
-                            <Stethoscope className="h-8 w-8 text-brand-600 dark:text-brand-400" />
-                        </div>
+                    <div className="flex items-center gap-3 group cursor-pointer">
+                        <img src="/logo.png" alt="DS Logo" className="h-10 w-10 object-contain group-hover:scale-110 transition-transform" />
                         <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-accent-600 dark:from-brand-400 dark:to-accent-400">
                             Deepti Singh
                         </span>
