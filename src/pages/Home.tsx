@@ -28,13 +28,14 @@ const Home = () => {
                             </h2>
                         </div>
                         <div className="flex flex-wrap gap-4 pt-2">
-                            <Link
-                                to="/contact" // Assuming resume download or contact
+                            <a
+                                href="/Deepti_Resume_Final.pdf"
+                                download="Deepti_Singh_Resume.pdf"
                                 className="flex min-w-[140px] cursor-pointer items-center justify-center rounded-full h-12 px-8 bg-primary hover:bg-primary-hover text-white text-base font-bold tracking-wide transition-all shadow-soft-pink hover:shadow-lg hover:-translate-y-1"
                             >
                                 <span className="truncate mr-2">View Resume</span>
                                 <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                            </Link>
+                            </a>
                             <Link
                                 to="/contact"
                                 className="flex min-w-[140px] cursor-pointer items-center justify-center rounded-full h-12 px-8 bg-white dark:bg-gray-800 border-2 border-pink-100 dark:border-gray-700 text-gray-700 dark:text-gray-200 text-base font-bold tracking-wide hover:bg-pink-50 dark:hover:bg-gray-700 transition-all hover:-translate-y-1"

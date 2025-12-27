@@ -23,9 +23,9 @@ const Compliance = () => {
                                     </p>
                                 </div>
                                 <div className="flex gap-4 flex-wrap mt-2">
-                                    <button className="flex min-w-[150px] cursor-pointer items-center justify-center rounded-2xl h-14 px-8 bg-text-main-light dark:bg-white text-white dark:text-surface-dark hover:scale-105 active:scale-95 text-base font-bold shadow-xl shadow-slate-200 dark:shadow-none transition-all duration-300">
+                                    <a href="/Deepti_Resume_Final.pdf" download="Deepti_Singh_Resume.pdf" className="flex min-w-[150px] cursor-pointer items-center justify-center rounded-2xl h-14 px-8 bg-text-main-light dark:bg-white text-white dark:text-surface-dark hover:scale-105 active:scale-95 text-base font-bold shadow-xl shadow-slate-200 dark:shadow-none transition-all duration-300">
                                         <span className="truncate">Download CV</span>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
 

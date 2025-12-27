@@ -71,13 +71,14 @@ const Navbar = () => {
                                 )}
                             </NavLink>
                         ))}
-                        <Link
-                            to="/contact" // Or a resume link if available
+                        <a
+                            href="/Deepti_Resume_Final.pdf"
+                            download="Deepti_Singh_Resume.pdf"
                             className="flex items-center justify-center rounded-full h-10 px-6 bg-gradient-to-r from-primary to-secondary text-white text-sm font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
                         >
                             <span className="material-symbols-outlined text-sm mr-2">download</span>
                             Resume
-                        </Link>
+                        </a>
                         <ThemeToggle />
                     </nav>
 
@@ -126,13 +127,14 @@ const Navbar = () => {
                             </NavLink>
                         ))}
                         <div className="pt-2 mt-2 border-t border-pink-100 dark:border-pink-900/30">
-                            <Link
-                                to="/contact"
+                            <a
+                                href="/Deepti_Resume_Final.pdf"
+                                download="Deepti_Singh_Resume.pdf"
                                 className="flex w-full items-center justify-center rounded-xl h-12 bg-gradient-to-r from-primary to-secondary text-white text-base font-bold shadow-md"
                             >
                                 <span className="material-symbols-outlined mr-2">download</span>
                                 Download Resume
-                            </Link>
+                            </a>
                         </div>
                     </nav>
                 </div>
