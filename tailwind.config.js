@@ -8,19 +8,19 @@ export default {
     theme: {
         extend: {
             colors: {
-                "primary": "#ff5c8d", // Playful Pink
-                "primary-hover": "#f04678",
-                "primary-dark": "#be185d", // Keeping for utility if needed
-                "secondary": "#a78bfa", // Soft Purple
-                "accent": "#ffd1dc", // Pastel Pink
-                "background-light": "#fff5f7",
-                "background-dark": "#2a1b26", // Deep Warm Purple
+                "primary": "#ec4899", // Pink-500 from Career Design
+                "primary-hover": "#db2777", // Pink-600
+                "primary-dark": "#be185d",
+                "secondary": "#d946ef", // Fuchsia-500 from Career Design
+                "accent": "#ffd1dc",
+                "background-light": "#fff0f5",
+                "background-dark": "#2a1820",
                 "surface-light": "#ffffff",
-                "surface-dark": "#4a1c30", // Using text-main as surface dark or similar deep tone
-                "text-main-light": "#4a1c30", // Dark Maroon/Brown
-                "text-main-dark": "#fce7f3",
-                "text-muted-light": "#6b7280", // Standard gray for readability
-                "text-muted-dark": "#fda4af",
+                "surface-dark": "#3d2230", // From Career Design
+                "text-main-light": "#2d1b24", // Exact match from design body tag
+                "text-main-dark": "#fdf2f8", // pink-50
+                "text-muted-light": "#6b7280",
+                "text-muted-dark": "#fbcfe8", // pink-200 for muted dark mode text
                 "border-light": "#fbcfe8",
                 "border-dark": "#831843",
 

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
+import { ThemeToggle } from '../ui/theme-toggle';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -77,60 +78,64 @@ const Navbar = () => {
                             <span className="material-symbols-outlined text-sm mr-2">download</span>
                             Resume
                         </Link>
+                        <ThemeToggle />
                     </nav>
 
-                    {/* Mobile Menu Button */}
-                    <button
-                        className="md:hidden p-2 text-text-main-light dark:text-white hover:bg-pink-50 dark:hover:bg-pink-900/20 rounded-lg transition-colors"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        aria-label="Toggle menu"
-                    >
-                        <span className="material-symbols-outlined text-3xl">
-                            {isMenuOpen ? 'close' : 'menu'}
-                        </span>
-                    </button>
+                    <div className="flex items-center gap-2 md:hidden">
+                        <ThemeToggle />
+                        {/* Mobile Menu Button */}
+                        <button
+                            className="md:hidden p-2 text-text-main-light dark:text-white hover:bg-pink-50 dark:hover:bg-pink-900/20 rounded-lg transition-colors"
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            aria-label="Toggle menu"
+                        >
+                            <span className="material-symbols-outlined text-3xl">
+                                {isMenuOpen ? 'close' : 'menu'}
+                            </span>
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            {/* Mobile Navigation Dropdown */}
-            <div
-                className={`md:hidden absolute top-full left-0 w-full bg-white dark:bg-background-dark border-b border-pink-100 dark:border-pink-900/30 shadow-lg transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
-                    }`}
-            >
-                <nav className="flex flex-col py-4 px-4 gap-2">
-                    {navLinks.map((link) => (
-                        <NavLink
-                            key={link.path}
-                            to={link.path}
-                            className={({ isActive }) => `
+                {/* Mobile Navigation Dropdown */}
+                <div
+                    className={`md:hidden absolute top-full left-0 w-full bg-white dark:bg-background-dark border-b border-pink-100 dark:border-pink-900/30 shadow-lg transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+                        }`}
+                >
+                    <nav className="flex flex-col py-4 px-4 gap-2">
+                        {navLinks.map((link) => (
+                            <NavLink
+                                key={link.path}
+                                to={link.path}
+                                className={({ isActive }) => `
                                 px-4 py-3 rounded-xl text-base font-bold transition-colors flex items-center gap-3
                                 ${isActive
-                                    ? 'bg-pink-50 dark:bg-pink-900/20 text-primary'
-                                    : 'text-text-muted-light dark:text-text-muted-dark hover:bg-gray-50 dark:hover:bg-white/5'
-                                }
+                                        ? 'bg-pink-50 dark:bg-pink-900/20 text-primary'
+                                        : 'text-text-muted-light dark:text-text-muted-dark hover:bg-gray-50 dark:hover:bg-white/5'
+                                    }
                             `}
-                        >
-                            {/* Optional icons for mobile menu */}
-                            <span className="material-symbols-outlined text-xl">
-                                {link.name === 'Home' ? 'home' :
-                                    link.name === 'Experience' ? 'work' :
-                                        link.name === 'Skills' ? 'handyman' :
-                                            link.name === 'Equipment' ? 'medical_services' :
-                                                link.name === 'Compliance' ? 'verified_user' : 'mail'}
-                            </span>
-                            {link.name}
-                        </NavLink>
-                    ))}
-                    <div className="pt-2 mt-2 border-t border-pink-100 dark:border-pink-900/30">
-                        <Link
-                            to="/contact"
-                            className="flex w-full items-center justify-center rounded-xl h-12 bg-gradient-to-r from-primary to-secondary text-white text-base font-bold shadow-md"
-                        >
-                            <span className="material-symbols-outlined mr-2">download</span>
-                            Download Resume
-                        </Link>
-                    </div>
-                </nav>
+                            >
+                                {/* Optional icons for mobile menu */}
+                                <span className="material-symbols-outlined text-xl">
+                                    {link.name === 'Home' ? 'home' :
+                                        link.name === 'Experience' ? 'work' :
+                                            link.name === 'Skills' ? 'handyman' :
+                                                link.name === 'Equipment' ? 'medical_services' :
+                                                    link.name === 'Compliance' ? 'verified_user' : 'mail'}
+                                </span>
+                                {link.name}
+                            </NavLink>
+                        ))}
+                        <div className="pt-2 mt-2 border-t border-pink-100 dark:border-pink-900/30">
+                            <Link
+                                to="/contact"
+                                className="flex w-full items-center justify-center rounded-xl h-12 bg-gradient-to-r from-primary to-secondary text-white text-base font-bold shadow-md"
+                            >
+                                <span className="material-symbols-outlined mr-2">download</span>
+                                Download Resume
+                            </Link>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </header>
     );
