@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Deepti Singh - Biomedical Engineer Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff5c8d", // Playful Pink
+                        "primary-hover": "#f04678",
+                        "secondary": "#a78bfa", // Soft Purple
+                        "background-light": "#fff5f7", // Very Light Lavender/Pink tint
+                        "background-dark": "#2a1b26", // Deep Warm Purple
+                        "accent": "#ffd1dc", // Pastel Pink
+                        "text-main": "#4a1c30", // Dark Maroon/Brown for text
+                    },
+                    fontFamily: {
+                        "display": ["Nunito", "sans-serif"],
+                        "body": ["Inter", "sans-serif"]
+                    },
+                    animation: {
+                        "fade-in-up": "fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+                        "float": "float 4s ease-in-out infinite",
+                        "pop-in": "popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards",
+                        "wiggle": "wiggle 1s ease-in-out infinite",
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            "0%": { opacity: "0", transform: "translateY(30px)" },
+                            "100%": { opacity: "1", transform: "translateY(0)" }
+                        },
+                        float: {
+                            "0%, 100%": { transform: "translateY(0)" },
+                            "50%": { transform: "translateY(-15px)" }
+                        },
+                        popIn: {
+                            "0%": { opacity: "0", transform: "scale(0.8)" },
+                            "100%": { opacity: "1", transform: "scale(1)" }
+                        },
+                        wiggle: {
+                            "0%, 100%": { transform: "rotate(-3deg)" },
+                            "50%": { transform: "rotate(3deg)" }
+                        }
+                    },
+                    boxShadow: {
+                        "soft-pink": "0 10px 40px -10px rgba(255, 92, 141, 0.3)",
+                        "glow": "0 0 20px rgba(255, 92, 141, 0.5)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-display {
+            font-family: 'Nunito', sans-serif;
+        }.text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #ff5c8d, #a78bfa);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden font-display">
+<div class="layout-container flex w-full flex-col z-50">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-pink-100 dark:border-pink-900/30 px-6 md:px-10 py-4 bg-white/80 dark:bg-background-dark/90 backdrop-blur-md sticky top-0 transition-all">
+<div class="flex items-center gap-3">
+<div class="size-10 flex items-center justify-center text-white bg-primary rounded-full shadow-md animate-pop-in">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+</div>
+<h2 class="text-text-main dark:text-white text-xl font-bold leading-tight tracking-tight hover:text-primary transition-colors cursor-pointer">
+                        Deepti Singh
+                    </h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-8">
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-semibold transition-colors relative group" href="#">
+                            Home
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-semibold transition-colors relative group" href="#">
+                            Experience
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-semibold transition-colors relative group" href="#">
+                            Skills
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-semibold transition-colors relative group" href="#">
+                            Contact
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+</a>
+</div>
+</div>
+<div class="md:hidden flex items-center text-primary">
+<span class="material-symbols-outlined cursor-pointer text-3xl">menu</span>
+</div>
+</header>
+</div>
+<main class="flex flex-1 flex-col items-center px-4 md:px-10 lg:px-20 overflow-hidden">
+<div class="layout-content-container flex flex-col max-w-[1100px] flex-1 w-full relative">
+<div class="absolute top-0 left-[-100px] w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+<div class="absolute top-0 right-[-100px] w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+<section class="@container w-full pt-12 pb-16 md:py-20">
+<div class="flex flex-col-reverse gap-10 md:gap-12 md:flex-row items-center justify-between">
+<div class="flex flex-col gap-6 md:gap-8 flex-1 max-w-xl z-10 opacity-0 animate-fade-in-up" style="animation-delay: 100ms;">
+<div class="flex flex-col gap-4 text-left">
+<div class="w-fit rounded-full bg-pink-100 dark:bg-pink-900/30 px-4 py-1.5 border border-pink-200 dark:border-pink-800">
+<span class="text-xs font-bold uppercase tracking-wide text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">stars</span>
+                                    3+ Years of Sparkle &amp; Experience
+                                </span>
+</div>
+<h1 class="text-text-main dark:text-white text-5xl md:text-6xl font-black leading-[1.1] tracking-tight">
+                                    Hello, I'm <br/>
+<span class="text-gradient">Deepti Singh</span>
+</h1>
+<h2 class="text-gray-600 dark:text-gray-300 text-lg md:text-xl font-medium leading-relaxed max-w-lg">
+                                    A <span class="text-primary font-bold">Biomedical Engineer</span> blending technical precision with care. Ensuring patient safety through equipment maintenance, compliance, and cheerful clinical support.
+                                </h2>
+</div>
+<div class="flex flex-wrap gap-4 pt-2">
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-full h-12 px-8 bg-primary hover:bg-primary-hover text-white text-base font-bold tracking-wide transition-all shadow-soft-pink hover:shadow-lg hover:-translate-y-1">
+<span class="truncate mr-2">View Resume</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-full h-12 px-8 bg-white dark:bg-gray-800 border-2 border-pink-100 dark:border-gray-700 text-gray-700 dark:text-gray-200 text-base font-bold tracking-wide hover:bg-pink-50 dark:hover:bg-gray-700 transition-all hover:-translate-y-1">
+<span class="truncate">Contact Me</span>
+</button>
+</div>
+</div>
+<div class="relative w-full md:w-auto flex-1 flex justify-center md:justify-end opacity-0 animate-fade-in-up" style="animation-delay: 300ms;">
+<div class="relative w-[300px] h-[300px] md:w-[420px] md:h-[420px] animate-float">
+<div class="absolute inset-0 bg-gradient-to-tr from-pink-200 to-purple-200 dark:from-pink-900 dark:to-purple-900 rounded-[2rem] rotate-3 scale-105 shadow-xl"></div>
+<div class="absolute inset-0 bg-white dark:bg-gray-800 rounded-[2rem] -rotate-2 scale-[1.02]"></div>
+<div class="relative w-full h-full rounded-[1.8rem] overflow-hidden border-4 border-white dark:border-gray-700 shadow-2xl">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Professional headshot of Deepti Singh, smiling in a professional setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqwl4It6hVjMghPIXzx49tonjqCwqNqFxSAALMmKVMbFBlwphJYKc3JRw937jeMF7Aj2C0nAJtSJmTTItdA8sVQAbRTCmyb-QglZV4Q6YOqmCbY03R8Mc2qJmnRxVKpT95aPfAbiWxbbfJR6YbH8zw0JJLbOoEtkMhYIYn8aRLnRkZ5AF_L1xEuc1iRL1_YWvsxr6I26Ak47vu8smt2ouxcv_FzQH3-hpwNiwTPi2wpmRXFyP1FpsnfrVD5ksSHak8f3Y0Vw_Hqa4");'></div>
+<div class="absolute bottom-6 right-6 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm p-3 rounded-2xl shadow-lg border border-pink-100 dark:border-gray-700 flex items-center gap-2 animate-bounce-soft">
+<span class="material-symbols-outlined text-primary">medical_services</span>
+<span class="text-xs font-bold text-gray-800 dark:text-white">Biomedical Expert</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-10 py-12 md:py-16 relative z-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 opacity-0 animate-fade-in-up" style="animation-delay: 500ms;">
+<div class="flex flex-col gap-2">
+<span class="text-primary font-bold uppercase tracking-wider text-sm">My Superpowers</span>
+<h1 class="text-text-main dark:text-white text-3xl md:text-4xl font-black leading-tight">
+                            Core Competencies
+                        </h1>
+</div>
+<p class="text-gray-500 dark:text-gray-400 max-w-md text-right hidden md:block">
+                        Dedicated to the lifecycle management of medical devices with a touch of excellence.
+                    </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<div class="group flex flex-1 gap-5 rounded-3xl border border-pink-100 dark:border-gray-700 bg-white dark:bg-[#2a1b26] p-8 flex-col shadow-sm hover:shadow-soft-pink transition-all duration-300 hover:-translate-y-2 opacity-0 animate-fade-in-up" style="animation-delay: 600ms;">
+<div class="size-14 rounded-2xl bg-pink-50 dark:bg-pink-900/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined text-[32px]">precision_manufacturing</span>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-text-main dark:text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">Device Calibration</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium leading-relaxed">
+                                    Precision maintenance ensuring device accuracy, reliability, and patient safety across various modalities.
+                                </p>
+</div>
+</div>
+<div class="group flex flex-1 gap-5 rounded-3xl border border-pink-100 dark:border-gray-700 bg-white dark:bg-[#2a1b26] p-8 flex-col shadow-sm hover:shadow-soft-pink transition-all duration-300 hover:-translate-y-2 opacity-0 animate-fade-in-up" style="animation-delay: 700ms;">
+<div class="size-14 rounded-2xl bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined text-[32px]">verified_user</span>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-text-main dark:text-white text-xl font-bold leading-tight group-hover:text-secondary transition-colors">Regulatory Compliance</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium leading-relaxed">
+                                    Strict adherence to healthcare standards (JCI, NABH) and safety protocols for hospital accreditation.
+                                </p>
+</div>
+</div>
+<div class="group flex flex-1 gap-5 rounded-3xl border border-pink-100 dark:border-gray-700 bg-white dark:bg-[#2a1b26] p-8 flex-col shadow-sm hover:shadow-soft-pink transition-all duration-300 hover:-translate-y-2 opacity-0 animate-fade-in-up" style="animation-delay: 800ms;">
+<div class="size-14 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-blue-400 group-hover:bg-blue-400 group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined text-[32px]">monitor_heart</span>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-text-main dark:text-white text-xl font-bold leading-tight group-hover:text-blue-400 transition-colors">Clinical Support</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium leading-relaxed">
+                                    Providing hands-on technical assistance, troubleshooting, and training for medical staff with a smile.
+                                </p>
+</div>
+</div>
+</div>
+</section>
+<footer class="flex flex-col gap-6 py-10 mt-auto text-center border-t border-pink-100 dark:border-pink-900/30">
+<div class="flex flex-wrap justify-center gap-6">
+<a class="group" href="#">
+<div class="text-gray-400 hover:text-primary transition-all flex items-center justify-center p-3 rounded-full hover:bg-pink-50 dark:hover:bg-pink-900/20 hover:scale-110">
+<span class="material-symbols-outlined text-[24px]">public</span>
+</div>
+</a>
+<a class="group" href="#">
+<div class="text-gray-400 hover:text-primary transition-all flex items-center justify-center p-3 rounded-full hover:bg-pink-50 dark:hover:bg-pink-900/20 hover:scale-110">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+</div>
+</a>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium leading-normal">
+                        © 2024 Deepti Singh. Crafted with <span class="text-red-500">♥</span> and Precision.
+                    </p>
+</footer>
+</div>
+</main>
+</div>
+
+</body></html>

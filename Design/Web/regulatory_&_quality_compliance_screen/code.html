@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Deepti Singh - Regulatory Compliance</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Fredoka:wght@400;600&amp;family=Nunito:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec4899", // Pink-500
+                        "secondary": "#a855f7", // Purple-500
+                        "accent": "#2dd4bf", // Teal-400
+                        "soft-pink": "#fce7f3",
+                        "soft-purple": "#f3e8ff",
+                        "soft-teal": "#ccfbf1",
+                        "background-light": "#fff0f5", // Very light pinkish background
+                        "background-dark": "#1f1a24",
+                    },
+                    fontFamily: {
+                        "display": ["Fredoka", "sans-serif"],
+                        "body": ["Nunito", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px"},
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'unfold': 'unfold 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        unfold: {
+                            '0%': { opacity: '0', transform: 'translateY(20px) scale(0.95)' },
+                            '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Fredoka', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+        }::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fce7f3;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ec4899;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #db2777;
+        }
+        .blob-shape {
+            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="w-full flex justify-center sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-pink-100 dark:border-slate-800 shadow-sm">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap px-6 lg:px-10 py-4">
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="size-10 text-primary bg-soft-pink rounded-full p-2 group-hover:rotate-12 transition-transform duration-300">
+<svg class="w-full h-full" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">Deepti Singh</h2>
+<span class="text-primary dark:text-pink-400 text-xs font-bold uppercase tracking-wider">Biomedical Engineer</span>
+</div>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-base font-bold transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-base font-bold transition-colors" href="#">About</a>
+<a class="text-primary dark:text-pink-400 text-base font-black border-b-4 border-primary/30 pb-1" href="#">Compliance</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-base font-bold transition-colors" href="#">Experience</a>
+</nav>
+<button class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-gradient-to-r from-primary to-secondary hover:from-pink-600 hover:to-purple-600 text-white text-sm font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+<span class="truncate">Contact Me</span>
+</button>
+</div>
+<div class="md:hidden flex items-center">
+<span class="material-symbols-outlined text-slate-900 dark:text-white text-3xl">menu</span>
+</div>
+</header>
+</div>
+</div>
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-[1024px] flex-1">
+<div class="@container mb-12 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-purple-200/50 rounded-full blur-3xl"></div>
+<div class="absolute top-20 right-0 w-60 h-60 bg-pink-200/50 rounded-full blur-3xl"></div>
+<div class="flex flex-col gap-8 py-10 @[864px]:flex-row items-center relative z-10">
+<div class="w-full @[864px]:w-1/2 flex flex-col gap-6 justify-center">
+<div class="flex flex-col gap-4 text-left">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-slate-800 border-2 border-primary/20 shadow-sm w-fit animate-bounce">
+<span class="material-symbols-outlined text-primary text-lg">verified</span>
+<span class="text-primary text-xs font-extrabold uppercase tracking-wide">Compliance Expert</span>
+</div>
+<h1 class="text-slate-900 dark:text-white text-5xl font-black leading-tight tracking-tight drop-shadow-sm">
+                                    Regulatory &amp; Quality <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Compliance</span>
+</h1>
+<p class="text-slate-600 dark:text-slate-300 text-lg font-medium leading-relaxed max-w-lg">
+                                    Specializing in <span class="text-secondary font-bold">NABH</span>, <span class="text-accent font-bold">AERB</span>, and <span class="text-primary font-bold">PNDT</span> protocols. I bring color to compliance by ensuring safety, integrity, and operational excellence with a smile! ✨
+                                </p>
+</div>
+<div class="flex gap-4 flex-wrap mt-2">
+<button class="flex min-w-[150px] cursor-pointer items-center justify-center rounded-2xl h-14 px-8 bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:scale-105 active:scale-95 text-base font-bold shadow-xl shadow-slate-200 dark:shadow-none transition-all duration-300">
+<span class="truncate">Download CV</span>
+</button>
+<button class="flex min-w-[150px] cursor-pointer items-center justify-center rounded-2xl h-14 px-8 bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-primary/50 text-base font-bold transition-all duration-300">
+<span class="truncate">View Experience</span>
+</button>
+</div>
+</div>
+<div class="w-full @[864px]:w-1/2 mt-8 @[864px]:mt-0 flex justify-center">
+<div class="relative w-full max-w-md aspect-square">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 via-secondary/20 to-accent/20 rounded-[2rem] transform rotate-3 scale-105"></div>
+<div class="absolute inset-0 bg-white dark:bg-slate-800 rounded-[2rem] transform -rotate-2 shadow-xl overflow-hidden border-4 border-white dark:border-slate-700">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover hover:scale-110 transition-transform duration-700" data-alt="Abstract visualization of medical compliance standards" style='background-image: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVL7OgwWY9NkOZWp5JXYIiM4Mcx_iOXWiRmp6uumMqC6yaumaIRlvF9PC1JkfBnDYEVtGCoDi_1ztj8M7FCtg_8HQITyClZQCLDgAClqBo9JUoQ08H2Ge8-lQ2P_51jYk5AE2jmhjLVU8tlZfZpbAoymwmuCvh3VFYn6n0rhd5d0x17h7RBUPNFLidNsIFxBMof15tf-QCW_BalDleMfVqadlH0CFpEFpGVNEndiESCIUwFh7fZxwP6s3XxBHonua4M1BEL8A-u3k");'>
+</div>
+</div>
+<div class="absolute -right-4 -top-4 bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-lg animate-float" style="animation-delay: 0s;">
+<span class="material-symbols-outlined text-primary text-3xl">medical_services</span>
+</div>
+<div class="absolute -left-4 bottom-10 bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-lg animate-float" style="animation-delay: 1s;">
+<span class="material-symbols-outlined text-secondary text-3xl">shield</span>
+</div>
+<div class="absolute right-10 -bottom-6 bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-lg animate-float" style="animation-delay: 2s;">
+<span class="material-symbols-outlined text-accent text-3xl">assignment_turned_in</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 py-8 mb-12">
+<div class="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none border-b-4 border-primary hover:-translate-y-1 transition-transform duration-300">
+<div class="flex items-center gap-3 mb-3">
+<div class="p-2 bg-pink-100 dark:bg-pink-900/30 rounded-xl text-primary">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-bold uppercase tracking-wide">Audit Success</p>
+</div>
+<p class="text-slate-900 dark:text-white text-4xl font-black">100%</p>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none border-b-4 border-secondary hover:-translate-y-1 transition-transform duration-300">
+<div class="flex items-center gap-3 mb-3">
+<div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-xl text-secondary">
+<span class="material-symbols-outlined">engineering</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-bold uppercase tracking-wide">Calibrations</p>
+</div>
+<p class="text-slate-900 dark:text-white text-4xl font-black">50+</p>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none border-b-4 border-accent hover:-translate-y-1 transition-transform duration-300">
+<div class="flex items-center gap-3 mb-3">
+<div class="p-2 bg-teal-100 dark:bg-teal-900/30 rounded-xl text-accent">
+<span class="material-symbols-outlined">history</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-bold uppercase tracking-wide">Experience</p>
+</div>
+<p class="text-slate-900 dark:text-white text-4xl font-black">3 Years</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4 pb-10 pt-5">
+<span class="text-secondary font-black tracking-wider uppercase text-sm bg-secondary/10 px-4 py-1 rounded-full">My Expertise</span>
+<h2 class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-tight">
+                        Core Compliance Expertise
+                    </h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl font-medium">
+                        Comprehensive management of regulatory requirements across critical medical domains to ensure seamless facility operations.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-16">
+<div class="relative group opacity-0 animate-[unfold_0.6s_ease-out_forwards] delay-[100ms]" style="animation-fill-mode: forwards;">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-pink-300 to-purple-300 rounded-[2rem] opacity-50 group-hover:opacity-100 transition duration-300 blur-sm"></div>
+<div class="relative flex flex-col h-full gap-5 rounded-[1.8rem] bg-white dark:bg-slate-800 p-8 shadow-sm transition-all duration-300">
+<div class="size-16 rounded-2xl bg-gradient-to-br from-pink-100 to-pink-50 dark:from-pink-900/40 dark:to-slate-800 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300 shadow-inner">
+<span class="material-symbols-outlined" style="font-size: 32px;">verified_user</span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="text-slate-900 dark:text-white text-2xl font-black">NABH</h3>
+<div class="h-1 w-12 bg-pink-300 rounded-full"></div>
+<p class="text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+                                    Keeping hospital standards sky-high! Managing logs, vendor contracts, and PM schedules with precision.
+                                </p>
+</div>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700">
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-400">
+<div class="flex-shrink-0 size-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-500">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+                                        Vendor Management
+                                    </li>
+<li class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-400">
+<div class="flex-shrink-0 size-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-500">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+                                        Preventive Maintenance
+                                    </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="relative group opacity-0 animate-[unfold_0.6s_ease-out_forwards] delay-[300ms]" style="animation-fill-mode: forwards;">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-purple-300 to-indigo-300 rounded-[2rem] opacity-50 group-hover:opacity-100 transition duration-300 blur-sm"></div>
+<div class="relative flex flex-col h-full gap-5 rounded-[1.8rem] bg-white dark:bg-slate-800 p-8 shadow-sm transition-all duration-300">
+<div class="size-16 rounded-2xl bg-gradient-to-br from-purple-100 to-purple-50 dark:from-purple-900/40 dark:to-slate-800 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform duration-300 shadow-inner">
+<span class="material-symbols-outlined" style="font-size: 32px;">radiology</span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="text-slate-900 dark:text-white text-2xl font-black">AERB</h3>
+<div class="h-1 w-12 bg-purple-300 rounded-full"></div>
+<p class="text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+                                    Radiation safety is my priority. Ensuring X-ray quality assurance and keeping staff safe with TLD badges.
+                                </p>
+</div>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700">
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-400">
+<div class="flex-shrink-0 size-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-500">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+                                        QA for X-Ray/CT
+                                    </li>
+<li class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-400">
+<div class="flex-shrink-0 size-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-500">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+                                        TLD Badge Monitoring
+                                    </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="relative group opacity-0 animate-[unfold_0.6s_ease-out_forwards] delay-[500ms]" style="animation-fill-mode: forwards;">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-teal-300 to-emerald-300 rounded-[2rem] opacity-50 group-hover:opacity-100 transition duration-300 blur-sm"></div>
+<div class="relative flex flex-col h-full gap-5 rounded-[1.8rem] bg-white dark:bg-slate-800 p-8 shadow-sm transition-all duration-300">
+<div class="size-16 rounded-2xl bg-gradient-to-br from-teal-100 to-teal-50 dark:from-teal-900/40 dark:to-slate-800 flex items-center justify-center text-accent group-hover:scale-110 transition-transform duration-300 shadow-inner">
+<span class="material-symbols-outlined" style="font-size: 32px;">gavel</span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="text-slate-900 dark:text-white text-2xl font-black">PNDT Act</h3>
+<div class="h-1 w-12 bg-teal-300 rounded-full"></div>
+<p class="text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+                                    Strict tracking &amp; filing! I handle legal reporting and documentation for ultrasound machines with ease.
+                                </p>
+</div>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700">
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-400">
+<div class="flex-shrink-0 size-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-500">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+                                        Form F Filing
+                                    </li>
+<li class="flex items-center gap-3 text-sm font-semibold text-slate-600 dark:text-slate-400">
+<div class="flex-shrink-0 size-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-500">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+                                        Machine Tracking
+                                    </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full bg-gradient-to-r from-purple-600 to-primary rounded-[2.5rem] p-10 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left mb-10 overflow-hidden relative shadow-2xl shadow-purple-200 dark:shadow-none">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 left-0 w-40 h-40 bg-yellow-300/20 rounded-full blur-2xl -translate-x-1/3 translate-y-1/3"></div>
+<div class="relative z-10">
+<h2 class="text-white text-3xl md:text-4xl font-black mb-3">Ready to audit your facility?</h2>
+<p class="text-purple-100 text-lg font-medium max-w-md">Let's discuss how we can improve your equipment compliance and safety standards together!</p>
+</div>
+<button class="relative z-10 flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-white hover:bg-slate-50 text-primary text-lg font-black transition-all shadow-lg transform hover:scale-105 active:scale-95">
+<span class="truncate">Get in Touch</span>
+<span class="material-symbols-outlined ml-2">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<footer class="w-full border-t border-pink-100 dark:border-slate-800 bg-white dark:bg-slate-900 py-10 px-4">
+<div class="max-w-[1024px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="size-8 text-pink-300 dark:text-pink-700 bg-pink-50 dark:bg-slate-800 rounded-full p-1.5">
+<svg class="w-full h-full" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium">© 2023 Deepti Singh. Crafted with <span class="text-red-400">♥</span></span>
+</div>
+<div class="flex gap-6">
+<a class="text-slate-400 dark:text-slate-500 hover:text-primary dark:hover:text-primary transition-all hover:scale-110" href="#">
+<span class="sr-only">LinkedIn</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-secondary dark:hover:text-secondary transition-all hover:scale-110" href="#">
+<span class="sr-only">Email</span>
+<span class="material-symbols-outlined text-[24px]">mail</span>
+</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>

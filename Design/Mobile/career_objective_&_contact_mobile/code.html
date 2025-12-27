@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Deepti Singh - Portfolio</title>
+<!-- Material Symbols Link -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec4699",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#211119",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem", 
+                        "lg": "2rem", 
+                        "xl": "3rem", 
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(236, 70, 153, 0.15)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for clean look inside the mobile container */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white transition-colors duration-300 min-h-screen flex items-center justify-center p-4 sm:p-8">
+<!-- Mobile Container Simulation -->
+<div class="w-full max-w-[420px] bg-white dark:bg-[#2a1621] rounded-[2.5rem] shadow-2xl overflow-hidden border-8 border-white dark:border-[#381e2b] relative h-[850px] flex flex-col">
+<!-- Status Bar Simulation (Decoration) -->
+<div class="h-6 w-full bg-white dark:bg-[#2a1621] flex justify-between items-center px-6 pt-2 shrink-0 z-20">
+<span class="text-[10px] font-bold text-gray-400">9:41</span>
+<div class="flex gap-1">
+<div class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="w-3 h-1.5 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+</div>
+</div>
+<!-- Scrollable Content Area -->
+<div class="flex-1 overflow-y-auto no-scrollbar pb-8 relative z-10">
+<!-- TopNavBar (Adapted) -->
+<header class="flex items-center justify-between whitespace-nowrap px-6 py-4 sticky top-0 bg-white/90 dark:bg-[#2a1621]/90 backdrop-blur-sm z-30">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">biotech</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight">Portfolio</h2>
+</div>
+<button class="flex size-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-background-light dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-gray-900 dark:text-white" style="font-size: 24px;">menu</span>
+</button>
+</header>
+<!-- ProfileHeader (Adapted) -->
+<div class="px-6 pt-4 pb-2 flex flex-col items-center">
+<div class="relative group cursor-pointer">
+<div class="bg-center bg-no-repeat bg-cover rounded-full h-32 w-32 border-4 border-white dark:border-[#2a1621] shadow-soft" data-alt="Portrait of Deepti Singh against a neutral background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdMyeXlsv9vXgY402jXBsZ8GoSMLHETK3JqWxjlaPhvN7IE3L6pd36M1vByOXOF_IjnkOQmABmzQ8NaU4FKDxtdn5ginkH1cUPpvoJDk6Dj_XjySx6GnIV2xnyrJkkZl5s3DttOVFeB5Lp7Lw57-n_-hz9HVSegcuUGOJI90P6sXTdNx2VJ5LQS_jbKZSh0103mGDs7HgbX2vG2Wqngg2G-J_SGYMp5zWdiXKo1mNjoQWYyB45D_02psWpHa10n-ZE6ft41cg1jn0B");'>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary text-white rounded-full p-1.5 border-2 border-white dark:border-[#2a1621] flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center mt-4 gap-1">
+<h1 class="text-2xl font-bold leading-tight tracking-tight text-center">Deepti Singh</h1>
+<p class="text-primary font-medium text-sm tracking-wide uppercase">Biomedical Engineer</p>
+<div class="flex items-center gap-1 text-gray-500 dark:text-gray-400 mt-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<p class="text-sm font-normal">New Delhi, India</p>
+</div>
+</div>
+</div>
+<!-- ActionsBar (Adapted) -->
+<div class="px-6 py-6">
+<div class="grid grid-cols-3 gap-4">
+<!-- LinkedIn -->
+<button class="flex flex-col items-center gap-2 group">
+<div class="size-14 rounded-full bg-background-light dark:bg-white/5 flex items-center justify-center group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 group-hover:scale-105 transition-all duration-200">
+<span class="material-symbols-outlined text-gray-700 dark:text-gray-200 group-hover:text-[#0077b5]" style="font-size: 24px;">public</span>
+</div>
+<span class="text-xs font-medium text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">LinkedIn</span>
+</button>
+<!-- Email -->
+<button class="flex flex-col items-center gap-2 group">
+<div class="size-14 rounded-full bg-background-light dark:bg-white/5 flex items-center justify-center group-hover:bg-primary/10 group-hover:scale-105 transition-all duration-200">
+<span class="material-symbols-outlined text-gray-700 dark:text-gray-200 group-hover:text-primary" style="font-size: 24px;">mail</span>
+</div>
+<span class="text-xs font-medium text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">Email</span>
+</button>
+<!-- Resume -->
+<button class="flex flex-col items-center gap-2 group">
+<div class="size-14 rounded-full bg-background-light dark:bg-white/5 flex items-center justify-center group-hover:bg-green-50 dark:group-hover:bg-green-900/20 group-hover:scale-105 transition-all duration-200">
+<span class="material-symbols-outlined text-gray-700 dark:text-gray-200 group-hover:text-green-600" style="font-size: 24px;">description</span>
+</div>
+<span class="text-xs font-medium text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">Resume</span>
+</button>
+</div>
+</div>
+<div class="h-px w-full bg-gray-100 dark:bg-white/5 my-2"></div>
+<!-- Headline & Body (Combined Card) -->
+<div class="px-6 py-4">
+<div class="bg-background-light dark:bg-white/5 rounded-2xl p-6 relative overflow-hidden">
+<div class="absolute -right-4 -top-4 text-gray-200 dark:text-white/5 rotate-12">
+<span class="material-symbols-outlined" style="font-size: 80px;">format_quote</span>
+</div>
+<h3 class="text-xl font-bold leading-tight mb-3 relative z-10">Career Objective</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed relative z-10">
+                        Aspiring Biomedical Engineer dedicated to bridging the gap between engineering and medicine through innovative solutions and patient-centric design. Seeking to leverage skills in biomaterials and medical instrumentation.
+                    </p>
+</div>
+</div>
+<!-- Contact Form (New Component) -->
+<div class="px-6 py-4 mb-8">
+<h3 class="text-xl font-bold mb-4 px-1">Send a Message</h3>
+<form class="flex flex-col gap-4">
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400 text-[20px]">person</span>
+</div>
+<input class="w-full bg-background-light dark:bg-white/5 border-none rounded-full py-3.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-primary placeholder-gray-400 dark:placeholder-gray-500 dark:text-white" placeholder="Your Name" type="text"/>
+</div>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400 text-[20px]">alternate_email</span>
+</div>
+<input class="w-full bg-background-light dark:bg-white/5 border-none rounded-full py-3.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-primary placeholder-gray-400 dark:placeholder-gray-500 dark:text-white" placeholder="Your Email" type="email"/>
+</div>
+<div class="relative">
+<textarea class="w-full bg-background-light dark:bg-white/5 border-none rounded-2xl py-3 px-4 text-sm focus:ring-2 focus:ring-primary placeholder-gray-400 dark:placeholder-gray-500 dark:text-white resize-none" placeholder="How can I help you?" rows="3"></textarea>
+</div>
+<button class="mt-2 w-full bg-primary hover:bg-pink-600 text-white font-bold py-4 rounded-full shadow-lg shadow-primary/30 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2" type="button">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+</div>
+</div>
+<!-- Sticky Bottom Bar -->
+<div class="bg-white/90 dark:bg-[#2a1621]/95 backdrop-blur-md border-t border-gray-100 dark:border-white/5 px-6 py-4 shrink-0 z-30">
+<button class="w-full border-2 border-primary/20 text-primary hover:bg-primary/5 dark:hover:bg-primary/10 font-bold py-3 rounded-full transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Schedule a Call</span>
+</button>
+</div>
+</div>
+</body></html>

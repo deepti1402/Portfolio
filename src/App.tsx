@@ -1,25 +1,27 @@
-
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Equipment from './components/Equipment';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import Home from './pages/Home';
+import Experience from './pages/Experience';
+import Skills from './pages/Skills';
+import Equipment from './pages/Equipment';
+import Contact from './pages/Contact';
+// Compliance page will be created new
+import Compliance from './pages/Compliance';
 
 function App() {
     return (
-        <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
-            <Navbar />
-            <main>
-                <Hero />
-                <About />
-                <Skills />
-                <Equipment />
-                <Contact />
-            </main>
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="experience" element={<Experience />} />
+                    <Route path="skills" element={<Skills />} />
+                    <Route path="equipment" element={<Equipment />} />
+                    <Route path="compliance" element={<Compliance />} />
+                    <Route path="contact" element={<Contact />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     )
 }
 
