@@ -35,7 +35,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-3 group cursor-pointer">
                         <img src="/logo.svg" alt="DS Logo" className="h-10 w-10 object-contain group-hover:scale-110 transition-transform" />
-                        <span className="text-xl font-bold font-serif bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-accent-600 dark:from-brand-400 dark:to-accent-400">
+                        <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-accent-600 dark:from-brand-400 dark:to-accent-400">
                             Deepti Singh
                         </span>
                     </div>

@@ -28,8 +28,7 @@ export default {
                 }
             },
             fontFamily: {
-                sans: ['Outfit', 'sans-serif'],
-                serif: ['Playfair Display', 'serif'],
+                sans: ['Inter', 'sans-serif'],
             },
             animation: {
                 'float': 'float 6s ease-in-out infinite',
